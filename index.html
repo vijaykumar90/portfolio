@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vijay Surineela — Data Scientist &amp; ML Engineer</title>
+<meta name="description" content="Portfolio of Vijay Surineela — Data Scientist and ML Engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="letterbox letterbox-top" aria-hidden="true"></div>
+<div class="letterbox letterbox-bottom" aria-hidden="true"></div>
+
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">VS</a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <canvas id="descentCanvas" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow mono">Data Science &amp; ML Engineering</p>
+    <h1 class="hero-title">Vijay<br>Surineela</h1>
+    <p class="hero-sub">I build models that go from research to production — from convex
+      optimization proofs to retrieval-augmented chatbots and cloud-scale training pipelines.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <div class="resume-group">
+        <a href="Resume_DS.pdf" class="btn btn-ghost" download>Résumé — Data Science</a>
+        <a href="resume-ml-engineering.pdf" class="btn btn-ghost" download>Résumé — ML Engineering</a>
+      </div>
+    </div>
+    <p class="hero-caption mono">f(A) = Tr(AᵀMA) − λ·log det(AᵀNA + γI) &nbsp;→&nbsp; global minimum</p>
+  </div>
+</section>
+
+<!-- ===== STATS STRIP ===== -->
+<section class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat">
+      <p class="stat-number mono" data-target="52" data-suffix="K+">0</p>
+      <p class="stat-label">CRM records analyzed</p>
+    </div>
+    <div class="stat">
+      <p class="stat-number mono" data-target="73" data-suffix="%">0</p>
+      <p class="stat-label">dataset size reduction</p>
+    </div>
+    <div class="stat">
+      <p class="stat-number mono" data-target="18" data-suffix="">0</p>
+      <p class="stat-label">datasets benchmarked in research</p>
+    </div>
+    <div class="stat">
+      <p class="stat-number mono" data-target="50" data-suffix="%">0</p>
+      <p class="stat-label">GPU memory cut via BF16</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section reveal" id="about">
+  <div class="section-inner narrow">
+    <p class="eyebrow mono">About</p>
+    <h2 class="section-title">Grounded in theory, shipped in production.</h2>
+    <p class="lead">
+      I'm a graduate student and researcher working across data science and machine learning
+      engineering — publishing convex optimization methods for high-dimensional biological data
+      on one side, and building retrieval-augmented chatbots and cloud training pipelines on the
+      other. I care about models that are not just accurate, but explainable, efficient, and
+      honest about their failure modes.
+    </p>
+    <p class="lead">
+      My work spans supervised dimensionality reduction, diffusion-based synthetic data
+      generation, NLP, and applied ML infrastructure — with hands-on experience taking a project
+      from a Jupyter notebook to a scalable, monitored training job on the cloud.
+    </p>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section alt reveal" id="experience">
+  <div class="section-inner">
+    <p class="eyebrow mono">Experience</p>
+    <h2 class="section-title">Where I've worked</h2>
+
+    <div class="timeline">
+
+      <article class="tl-item reveal-item">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <div class="tl-head">
+            <h3>ML Intern</h3>
+            <span class="tl-date mono">Jun 2025 – Apr 2026</span>
+          </div>
+          <p class="tl-org">Vosyn · AI-driven real-time multilingual voice &amp; video localization</p>
+          <ul class="tl-list">
+            <li>Built supervised Text-to-Semantic (T2S) training pipelines for a 2-stage TTS
+              architecture — dataset loading, model init, training loop, and checkpointing.</li>
+            <li>Integrated MLflow experiment tracking for reproducible T2S training runs.</li>
+            <li>Launched and monitored containerized training jobs on Google Cloud Vertex AI.</li>
+            <li>Benchmarked Gemma 3 1B for machine translation; cut memory usage <strong>~50%</strong>
+              using BF16 mixed precision after FP32 exceeded available GPU memory.</li>
+            <li>Built BLEU / chrF evaluation workflows across 10 European language pairs.</li>
+            <li>Compressed a ~98GB multilingual dataset to ~26GB (<strong>~73.5%</strong> reduction)
+              via Parquet-based storage.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">PyTorch</span><span class="tag">Vertex AI</span>
+            <span class="tag">MLflow</span><span class="tag">Gemma</span>
+            <span class="tag">BF16</span><span class="tag">Parquet</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal-item">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <div class="tl-head">
+            <h3>Research Assistant</h3>
+            <span class="tl-date mono">Sept 2024 – May 2026</span>
+          </div>
+          <p class="tl-org">Dept. of Computer Science &amp; Engineering · advised by Dr. Tomojit Ghosh</p>
+          <ul class="tl-list">
+            <li>Co-authored <em>ConvexLDA</em>, a convex reformulation of Linear Discriminant
+              Analysis, submitted to <em>Knowledge-Based Systems</em> — benchmarked on 18 datasets
+              including RNA-seq and image data.</li>
+            <li>Developed <em>Block-wise DDPM</em>, a diffusion-based synthetic data generation
+              framework for high-dimensional, low-sample-size biological data.</li>
+            <li>Ran large-scale benchmarking against Fisher LDA, WDDR, and other state-of-the-art
+              dimensionality reduction methods.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Convex Optimization</span><span class="tag">PyTorch</span>
+            <span class="tag">Diffusion Models</span><span class="tag">RNA-seq</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal-item">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <div class="tl-head">
+            <h3>Software Developer</h3>
+            <span class="tl-date mono">Aug 2021 – Aug 2023</span>
+          </div>
+          <p class="tl-org">Tech Mahindra · Hyderabad, India</p>
+          <ul class="tl-list">
+            <li>Analyzed 52K+ Salesforce CRM records (SOQL, Tableau, Excel) for customer
+              segmentation, SLA trend analysis, and ad hoc business reporting.</li>
+            <li>Engineered 9 derived CRM features and standardized 12 reporting fields via
+              picklists, validation rules, and guided Salesforce Flows.</li>
+            <li>Built Tableau dashboards across 8 customer-ops KPIs, contributing to a drop in
+              SLA breach rate (18.2%→14.9%), resolution time (39.6→34.8 hrs), and repeat
+              complaints (16.4%→13.7%).</li>
+            <li>Segmented telecom customers into retention-risk cohorts using complaint history,
+              SLA breaches, tenure, and plan type.</li>
+            <li>Maintained 85%+ test coverage (Apex, Jest); coordinated releases across
+              Dev/QA/UAT/Production using GitLab.</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag">Salesforce / Apex</span><span class="tag">Tableau</span>
+            <span class="tag">SOQL</span><span class="tag">GitLab</span><span class="tag">Jest</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section class="section reveal" id="education">
+  <div class="section-inner">
+    <p class="eyebrow mono">Education</p>
+    <h2 class="section-title">Degree &amp; thesis</h2>
+
+    <div class="edu-block">
+      <div style="display:flex; gap:20px; align-items:flex-start;">
+        <a href="Diploma%20image%20wright%20state.jpg" target="_blank" rel="noopener" class="talks-photo" style="width:96px; height:96px; border-style:solid; background-image:url('Diploma%20image%20wright%20state.jpg');" aria-label="View diploma image"></a>
+        <div style="flex:1;">
+          <div class="tl-head">
+            <h3>M.S. in Computer Science</h3>
+            <span class="tl-date mono">Aug 2023 – May 2026</span>
+          </div>
+          <p class="tl-org">Wright State University, Dayton, Ohio</p>
+          <p class="thesis-title">Thesis: “Dimensionality Reduction and Synthetic Data Generation for
+            High-Dimensional, Low-Sample-Size Biological Data”</p>
+          <div class="tag-row">
+            <span class="tag">Thesis Defended</span>
+            <span class="tag">Submitted to OhioLINK</span>
+            <span class="tag">Diploma Conferred</span>
+          </div>
+        </div>
+      </div>
+      <a href="Diploma%20image%20wright%20state.jpg" class="card-link" style="display:block; margin-top:14px" target="_blank" rel="noopener">View Diploma Certificate →</a>
+      <a href="https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/10?p10_accession_num=wright1780171807628325&clear=10&session=104363219636484" class="card-link" style="display:block; margin-top:6px" target="_blank" rel="noopener">View Thesis on OhioLINK →</a>
+    </div>
+
+    <div class="edu-block talks">
+      <h4 class="mono talks-label">Talks &amp; Presentations</h4>
+      <ul class="talks-list">
+        <li>
+          <div class="talks-photo" style="background-image:url('1777334929784.jpg')">
+          </div>
+          <div class="talks-text">
+            <span class="talks-year mono">2026</span>
+            <span>Celebration of Research, Wright State University — Participated,
+              presenting <em>Block-wise DDPM</em></span>
+          </div>
+        </li>
+        <li>
+          <div class="talks-photo" style="background-image:url('1747145212922.jpg')">
+          </div>
+          <div class="talks-text">
+            <span class="talks-year mono">2025</span>
+            <span>Celebration of Research, Wright State University — Participated,
+              presenting <em>ConvexLDA</em></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESEARCH ===== -->
+<section class="section reveal" id="research">
+  <div class="section-inner">
+    <p class="eyebrow mono">Research</p>
+    <h2 class="section-title">Published &amp; submitted work</h2>
+
+    <div class="research-grid">
+      <article class="research-card reveal-item tilt-card">
+        <p class="mono card-kicker">Submitted · Knowledge-Based Systems</p>
+        <h3>ConvexLDA: A Convex Formulation of Linear Discriminant Analysis</h3>
+        <p>A fully convex, differentiable reformulation of LDA that replaces the ill-conditioned
+          matrix inversion at the heart of classical LDA with a smooth log-determinant surrogate.
+          Proven convex with O(1/t) convergence, and benchmarked against Fisher LDA and 11
+          state-of-the-art variants across 18 datasets spanning imaging, speech, and single-cell
+          RNA-seq — outperforming the best prior method by 20–25 points on high-dimensional
+          biological data.</p>
+        <div class="tag-row">
+          <span class="tag">Convex Optimization</span><span class="tag">Dimensionality Reduction</span>
+          <span class="tag">HDLSS</span>
+        </div>
+        <p class="card-byline">with Dr. Tomojit Ghosh, Wright State University</p>
+        <a href="https://arxiv.org/abs/2503.13623" class="card-link" style="display:block; margin-top:8px" target="_blank" rel="noopener">View Preprint on arXiv →</a>
+      </article>
+
+      <article class="research-card reveal-item tilt-card">
+        <p class="mono card-kicker">Preprint</p>
+        <h3>Sample-Induced Block-wise DDPM for Synthetic Data Generation in HDLSS Regime</h3>
+        <p>Vanilla diffusion models collapse when trained on high-dimensional, low-sample
+          transcriptomic data. This work partitions the feature space into blocks, trains an
+          independent DDPM per block, and reconstructs coherent synthetic samples via a
+          sample-induced generation strategy — improving geometric fidelity over vanilla DDPM
+          and scDiffusion, and measurably boosting downstream classification accuracy on
+          real cancer and gene-expression datasets.</p>
+        <div class="tag-row">
+          <span class="tag">Diffusion Models</span><span class="tag">Synthetic Data</span>
+          <span class="tag">Transcriptomics</span>
+        </div>
+        <p class="card-byline">Wright State University</p>
+      </article>
+
+      <article class="research-card reveal-item tilt-card placeholder-card">
+        <p class="mono card-kicker">In Progress · Details to be added</p>
+        <h3>Preliminary Study — Foundational Work Toward Block-wise DDPM</h3>
+        <p>Early-stage research conducted as part of the Research Assistant role, forming the
+          entry point that led to the Block-wise DDPM framework. Full details, results, and
+          write-up coming soon.</p>
+        <div class="tag-row">
+          <span class="tag">Diffusion Models</span><span class="tag">HDLSS</span>
+        </div>
+        <p class="card-byline">Wright State University</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section alt reveal" id="projects">
+  <div class="section-inner">
+    <p class="eyebrow mono">Projects</p>
+    <h2 class="section-title">Selected work</h2>
+
+    <div class="project-grid">
+
+      <article class="project-card featured reveal-item tilt-card">
+        <p class="mono card-kicker">RAG · LLM Application</p>
+        <h3>Medical RAG Chatbot</h3>
+        <p>A full-stack Retrieval-Augmented Generation chatbot that answers medical questions
+          grounded in custom PDF documents. Text is chunked, embedded with SentenceTransformer
+          (all-MiniLM-L6-v2), and stored in Pinecone; GPT-4o generates grounded answers via
+          LangChain, served through a Flask app deployed on AWS with a CI/CD pipeline.</p>
+        <div class="tag-row">
+          <span class="tag">LangChain</span><span class="tag">GPT-4o</span>
+          <span class="tag">Pinecone</span><span class="tag">Flask</span>
+          <span class="tag">AWS / CI-CD</span>
+        </div>
+        <a href="https://github.com/vijaykumar90/Medical-Chatbot" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card reveal-item tilt-card">
+        <p class="mono card-kicker">NLP · Model Comparison</p>
+        <h3>Airline Tweet Sentiment Analysis</h3>
+        <p>Full NLP pipeline on the Twitter US Airline Sentiment dataset — EDA, text
+          visualization, Bag-of-Words &amp; TF-IDF features, and four models (Logistic
+          Regression, Naive Bayes, DNN, LSTM) compared on accuracy, per-class F1, and an
+          error analysis of 654 misclassified tweets.</p>
+        <div class="tag-row">
+          <span class="tag">PyTorch</span><span class="tag">scikit-learn</span>
+          <span class="tag">LSTM</span><span class="tag">TF-IDF</span>
+        </div>
+        <a href="https://github.com/vijaykumar90/CS7730-DataScience/tree/main/FinalProject" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card reveal-item tilt-card">
+        <p class="mono card-kicker">Classification · Imbalanced Data</p>
+        <h3>Diabetes Health Indicators Classification</h3>
+        <p>Built and diagnosed six model families (Logistic Regression, SVM with three kernels,
+          two neural architectures) on the CDC BRFSS 2015 dataset (253K records). Identified
+          class imbalance as the root cause of poor minority-class recall across every linear
+          model, and evaluated stratified k-fold cross-validation as a mitigation.</p>
+        <div class="tag-row">
+          <span class="tag">PyTorch</span><span class="tag">SVM</span>
+          <span class="tag">Cross-Validation</span><span class="tag">Class Imbalance</span>
+        </div>
+        <a href="https://github.com/vijaykumar90/CS7730-DataScience/tree/main/Assignment" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card reveal-item tilt-card">
+        <p class="mono card-kicker">Information Retrieval</p>
+        <h3>TF-IDF Document Retrieval</h3>
+        <p>Custom TF-IDF vectorizer and cosine/Euclidean similarity ranking on the Cranfield
+          dataset, evaluated with precision, recall, and F1 on the top-10 retrieved documents
+          per query.</p>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">TF-IDF</span>
+        </div>
+        <a href="https://github.com/vijaykumar90/IR-Project1" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card reveal-item tilt-card">
+        <p class="mono card-kicker">Information Retrieval</p>
+        <h3>Newsgroup Text Classification</h3>
+        <p>Bernoulli Naive Bayes text classifier on the 20 Newsgroups dataset, implemented both
+          from scratch and with scikit-learn — compared via confusion matrices and evaluation
+          metrics.</p>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">Naive Bayes</span><span class="tag">scikit-learn</span>
+        </div>
+        <a href="https://github.com/vijaykumar90/IR-Project2" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section reveal" id="skills">
+  <div class="section-inner">
+    <p class="eyebrow mono">Toolbox</p>
+    <h2 class="section-title">What I work with</h2>
+    <div class="skills-grid">
+      <div class="skill-group reveal-item">
+        <h4 class="mono">Languages &amp; Core</h4>
+        <p>Python · SQL · Apex</p>
+      </div>
+      <div class="skill-group reveal-item">
+        <h4 class="mono">ML / DL</h4>
+        <p>PyTorch · scikit-learn · LSTM / DNN · Diffusion Models · Convex Optimization</p>
+      </div>
+      <div class="skill-group reveal-item">
+        <h4 class="mono">LLM &amp; NLP</h4>
+        <p>LangChain · RAG · GPT-4o · Gemma · SentenceTransformers · Pinecone</p>
+      </div>
+      <div class="skill-group reveal-item">
+        <h4 class="mono">Infra &amp; Cloud</h4>
+        <p>AWS · Google Cloud Vertex AI · MLflow · Flask · CI/CD · GitLab</p>
+      </div>
+      <div class="skill-group reveal-item">
+        <h4 class="mono">Data &amp; Analytics</h4>
+        <p>Tableau · Pandas · NumPy · Salesforce CRM · SOQL</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section alt reveal" id="contact">
+  <div class="section-inner narrow center">
+    <p class="eyebrow mono">Get in touch</p>
+    <h2 class="section-title">Let's talk about data.</h2>
+    <p class="lead">Open to Data Science and Machine Learning Engineering roles.</p>
+    <div class="contact-links">
+      <a href="mailto:surineelasaivijaykumar@gmail.com">surineelasaivijaykumar@gmail.com</a>
+      <a href="https://github.com/vijaykumar90" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/saivijaykumarsurineela/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Vijay Surineela. Built with HTML, CSS, and a convex objective function.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
